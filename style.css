@@ -1,0 +1,110 @@
+/* ## Colors
+
+- Yellow: hsl(47, 88%, 63%)
+
+- White: hsl(0, 0%, 100%)
+
+- Gray 500: hsl(0, 0%, 42%)
+- Gray 950: hsl(0, 0%, 7%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color01: hsl(47, 88%, 63%);
+  --bg-color02: hsl(0, 0%, 100%);
+  --text-primario: hsl(0, 0%, 42%);
+  --text-destaque: hsl(0, 0%, 7%);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 1rem;
+  background-color: var(--bg-color01);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.container-card {
+  background-color: var(--bg-color02);
+  max-width: 384px;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 0 #000;
+}
+
+@media (max-width: 375px) {
+  .container-card {
+    max-width: 330px;
+  }
+}
+
+.card-img img {
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.header .tag {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: var(--bg-color01);
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.header p {
+  color: var(--text-destaque);
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.card h1:hover {
+  color: var(--bg-color01);
+  cursor: pointer;
+}
+
+.card p {
+  color: var(--text-primario);
+  margin-bottom: 20px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-img img {
+  max-width: 32px;
+}
+
+figcaption {
+  font-weight: bold;
+  color: var(--text-destaque);
+}
