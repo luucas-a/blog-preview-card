@@ -106,5 +106,6 @@ figure {
 
 figcaption {
   font-weight: bold;
-  color: var(--text-destaque);
+  color: var(--text-destaque) ;
 }
+
